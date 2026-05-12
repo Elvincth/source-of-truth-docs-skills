@@ -1,5 +1,21 @@
 # Source of Truth Docs Skills
 
+<p align="center">
+  <img src="./assets/sot-icon.svg" alt="Source of Truth Docs Skills icon with SoT lettering" width="640">
+</p>
+
+<p align="center">
+  <a href="https://github.com/elvincth/source-of-truth-docs-skills">
+    <img alt="Skill" src="https://img.shields.io/badge/skill-source--of--truth--docs-0f766e">
+  </a>
+  <a href="https://github.com/vercel-labs/skills">
+    <img alt="Install with npx skills" src="https://img.shields.io/badge/install-npx%20skills%20add-2563eb">
+  </a>
+  <a href="https://openai.com/index/harness-engineering/">
+    <img alt="Inspired by OpenAI Harness Engineering" src="https://img.shields.io/badge/inspired%20by-Harness%20Engineering-111827">
+  </a>
+</p>
+
 `source-of-truth-docs-skills` helps agents create and maintain repository documentation that acts as the project's source of truth.
 
 It is inspired by OpenAI's Harness Engineering post and Karpathy-style coding guidelines. The combined idea is simple: put durable project knowledge in the repo, make it easy to navigate, and edit docs with restraint.
@@ -26,27 +42,29 @@ npx skills add . --skill source-of-truth-docs-skills
 
 ## The Problems
 
-Karpathy-style guidelines call out a few recurring agent failure modes:
+Agent-heavy projects often lose their source of truth in three places: chat history, stale docs, and unverified assumptions.
 
-- Agents make wrong assumptions and keep going instead of checking.
-- They hide confusion, miss inconsistencies, and fail to surface tradeoffs.
-- They overcomplicate code, APIs, and abstractions.
-- They touch nearby comments or code they do not understand, even when it is unrelated to the task.
+That creates a predictable failure pattern:
 
-Documentation work has the same failure modes. Agents can invent architecture, duplicate stale facts, create giant instruction files, or rewrite unrelated docs while trying to be helpful.
+- A new agent cannot tell which doc is authoritative.
+- Architecture and product behavior get inferred from nearby code instead of confirmed from source-backed docs.
+- Plans live in a conversation, so the next run cannot safely resume them.
+- Generated facts, external references, and human decisions get mixed together.
+- A simple documentation fix becomes a broad rewrite that creates more stale surface area.
 
 ## The Solution
 
-This skill applies four principles to documentation work:
+This skill turns the repository into a navigable source-of-truth system:
 
-| Principle | Addresses |
+| Documentation principle | What it prevents |
 | --- | --- |
-| Think Before Editing | Wrong assumptions, hidden confusion, missing tradeoffs |
-| Simplicity First | Overcomplicated docs, giant instruction files, duplicated sources |
-| Surgical Changes | Orthogonal edits, rewritten sections, touching docs outside the request |
-| Goal-Driven Verification | Source-backed claims, checkable links, resumable handoffs |
+| Map Before Detail | Giant instruction files and unclear entry points |
+| Source-Backed Claims | Invented architecture, stale behavior, and hidden assumptions |
+| Separate Knowledge Types | Generated schemas, product specs, plans, and references getting mixed together |
+| Surgical Doc Edits | Broad rewrites, duplicated facts, and unrelated documentation churn |
+| Verifiable Handoffs | Plans that cannot be resumed or checked by the next agent |
 
-The Harness Engineering inspiration is to keep project knowledge inside the repository. `AGENTS.md` becomes the compact map, while deeper docs hold the actual source of truth.
+The Harness Engineering inspiration is the repository as the harness: `AGENTS.md` is the compact map, and deeper docs hold the evidence-backed truth. The Karpathy-style restraint is in how updates happen: clarify, keep it small, touch only the relevant docs, and verify claims against the repo.
 
 ## Why this is useful
 

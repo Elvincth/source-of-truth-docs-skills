@@ -1,0 +1,61 @@
+<svg width="960" height="480" viewBox="0 0 960 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Source of Truth Docs Skills</title>
+  <desc id="desc">A dark badge-style icon with SoT letters, connected documentation nodes, and source-of-truth lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="60" x2="870" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.52" stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="213" y1="106" x2="747" y2="374" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#DBEAFE" stop-opacity="0.96"/>
+    </linearGradient>
+    <filter id="shadow" x="88" y="30" width="784" height="440" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="480" rx="64" fill="#020617"/>
+  <rect x="40" y="40" width="880" height="400" rx="48" fill="url(#bg)"/>
+  <g opacity="0.18">
+    <path d="M88 376H872" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M88 104H872" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M160 64V416" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M800 64V416" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="184" y="88" width="592" height="304" rx="36" fill="url(#panel)"/>
+    <rect x="206" y="112" width="548" height="256" rx="24" stroke="#0F172A" stroke-opacity="0.12" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(232 136)">
+    <rect x="0" y="0" width="170" height="208" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <path d="M32 52H138" stroke="#0F766E" stroke-width="12" stroke-linecap="round"/>
+    <path d="M32 92H122" stroke="#0F172A" stroke-opacity="0.34" stroke-width="10" stroke-linecap="round"/>
+    <path d="M32 128H138" stroke="#0F172A" stroke-opacity="0.22" stroke-width="10" stroke-linecap="round"/>
+    <path d="M32 164H104" stroke="#2563EB" stroke-opacity="0.78" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g stroke="#0F172A" stroke-opacity="0.2" stroke-width="8" stroke-linecap="round">
+    <path d="M430 178H532"/>
+    <path d="M430 240H532"/>
+    <path d="M430 302H532"/>
+  </g>
+
+  <g transform="translate(538 130)">
+    <circle cx="42" cy="48" r="28" fill="#0F766E"/>
+    <circle cx="42" cy="110" r="28" fill="#2563EB"/>
+    <circle cx="42" cy="172" r="28" fill="#111827"/>
+    <path d="M82 48H174" stroke="#0F172A" stroke-opacity="0.44" stroke-width="10" stroke-linecap="round"/>
+    <path d="M82 110H150" stroke="#0F172A" stroke-opacity="0.3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M82 172H166" stroke="#0F172A" stroke-opacity="0.24" stroke-width="10" stroke-linecap="round"/>
+    <path d="M32 48L40 57L55 39" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 110L40 119L55 101" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 172L40 181L55 163" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="480" y="272" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="116" font-weight="800" letter-spacing="0" fill="#0F172A">SoT</text>
+  <text x="480" y="324" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" letter-spacing="0" fill="#334155">SOURCE OF TRUTH DOCS</text>
+</svg>
