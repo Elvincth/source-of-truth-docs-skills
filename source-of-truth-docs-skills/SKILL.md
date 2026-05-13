@@ -54,7 +54,7 @@ docs/
 
 ## What Each File Or Folder Does
 
-- `AGENTS.md`: Short navigation map for agents. Include repo rules, common commands, active constraints, and links to deeper source-of-truth docs. Keep it compact.
+- `AGENTS.md`: Short navigation map for agents, add instruction tell future agents to edit the docs. Include repo rules, common commands, active constraints, and links to deeper source-of-truth docs. Keep it compact.
 - `ARCHITECTURE.md`: Top-level system map: domains, package boundaries, layering, dependency direction, runtime entrypoints, and major invariants.
 - `docs/design-docs/`: Durable design history. Store decisions, tradeoffs, core beliefs, architecture notes, and the reasoning behind non-obvious choices.
 - `docs/design-docs/index.md`: Index for design docs, with status and links to the most important decisions.
