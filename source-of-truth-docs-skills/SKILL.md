@@ -18,7 +18,7 @@ This skill combines two ideas:
 
 ## Recommended Documentation Map
 
-Use this as a general pattern. Adapt names to the project. Keep entry points short and put deeper detail in focused files.
+Use this as the pattern, product spec is each feature domain. Adapt names to the project. Keep entry points short and put deeper detail in focused files.
 
 ```text
 AGENTS.md
